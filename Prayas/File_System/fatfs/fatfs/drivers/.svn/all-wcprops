@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/fatfs/drivers
+END
+fatfs_ata.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/fatfs/drivers/fatfs_ata.c
+END
+fatfs_mmc_spi.c
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/fatfs/drivers/fatfs_mmc_spi.c
+END
+fatfs_usb.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/fatfs/drivers/fatfs_usb.c
+END

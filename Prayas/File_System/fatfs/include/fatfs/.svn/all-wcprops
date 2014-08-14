@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/include/fatfs
+END
+diskio_weak.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/include/fatfs/diskio_weak.h
+END
+ff.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/include/fatfs/ff.h
+END
+integer.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/include/fatfs/integer.h
+END
+diskio.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/hpmd/!svn/ver/10858/sandboxes/Sean/FatFs/tag_01_00_00/Microchip%20Solutions/microchip/include/fatfs/diskio.h
+END
