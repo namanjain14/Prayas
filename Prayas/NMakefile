@@ -1,0 +1,56 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: Data_Acquisition_Syatem.mcp
+# Date: Wed Aug 13 13:49:26 2014
+
+AS = pic32-as.exe
+CC = pic32-gcc.exe
+LD = pic32-ld.exe
+AR = pic32-ar.exe
+HX = pic32-bin2hex.exe
+RM = del
+
+"Data_Acquisition_Syatem.hex" : "Data_Acquisition_Syatem.elf"
+	$(HX) "Data_Acquisition_Syatem.elf"
+
+"Data_Acquisition_Syatem.elf" : "Object_Directory\ff.o" "Object_Directory\diskio.o" "Object_Directory\fatfs_mmc_spi.o" "Object_Directory\Delay.o" "Object_Directory\Tick.o" "Object_Directory\UART2TCPBridge.o" "Object_Directory\i2c_master.o" "Object_Directory\Main.o" "Object_Directory\Function.o" "Object_Directory\Aliotgateway.o" "Object_Directory\hmac.o" "Object_Directory\GenericTCPClient.o"
+	$(CC) -mprocessor=32MX460F512L "Object_Directory\ff.o" "Object_Directory\diskio.o" "Object_Directory\fatfs_mmc_spi.o" "Object_Directory\Delay.o" "Object_Directory\Tick.o" "Object_Directory\UART2TCPBridge.o" "Object_Directory\i2c_master.o" "Object_Directory\Main.o" "Object_Directory\Function.o" "Object_Directory\Aliotgateway.o" "Object_Directory\hmac.o" "Object_Directory\GenericTCPClient.o" -o"Data_Acquisition_Syatem.elf" -Wl,-L"C:\Program Files\Microchip\MPLAB C32 Suite\lib",-L"C:\Program Files\Microchip\MPLAB C32 Suite\pic32mx\lib",--defsym=__MPLAB_BUILD=1,--defsym=_min_heap_size=2048,--defsym=_min_stack_size=2048,-Map="Data_Acquisition_Syatem.map"
+
+"Object_Directory\ff.o" : "File_System\fatfs\fatfs\ff.c" "File_System\fatfs\include\fatfs\ff.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "Fatfs_Config.h" "File_System\fatfs\include\fatfs\diskio.h" "FATFs_Config.h" "TCPIP_Stack\Include\Compiler.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "File_System\fatfs\fatfs\ff.c" -o"Object_Directory\ff.o" -MMD -MF"Object_Directory\ff.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\diskio.o" : "File_System\fatfs\fatfs\diskio.c" "File_System\fatfs\include\fatfs\diskio.h" "FATFs_Config.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "File_System\fatfs\include\fatfs\diskio_weak.h" "File_System\fatfs\include\fatfs\diskio.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "File_System\fatfs\fatfs\diskio.c" -o"Object_Directory\diskio.o" -MMD -MF"Object_Directory\diskio.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\fatfs_mmc_spi.o" : "File_System\fatfs\fatfs\drivers\fatfs_mmc_spi.c" "HardwareProfile.h" "TCPIP_Stack\Include\Compiler.h" "File_System\fatfs\include\fatfs\diskio.h" "FATFs_Config.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "TCPIP_Stack\Include\TCPIP Stack\Delay.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "File_System\fatfs\fatfs\drivers\fatfs_mmc_spi.c" -o"Object_Directory\fatfs_mmc_spi.o" -MMD -MF"Object_Directory\fatfs_mmc_spi.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\Delay.o" : "TCPIP_Stack\TCPIP Stack\Delay.c" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "TCPIP_Stack\TCPIP Stack\Delay.c" -o"Object_Directory\Delay.o" -MMD -MF"Object_Directory\Delay.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\Tick.o" : "TCPIP_Stack\TCPIP Stack\Tick.c" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h" "TCPIP_Stack\Include\TCPIP Stack\Tick.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "TCPIP_Stack\TCPIP Stack\Tick.c" -o"Object_Directory\Tick.o" -MMD -MF"Object_Directory\Tick.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\UART2TCPBridge.o" : "TCPIP_Stack\TCPIP Stack\UART2TCPBridge.c" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "TCPIP_Stack\TCPIP Stack\UART2TCPBridge.c" -o"Object_Directory\UART2TCPBridge.o" -MMD -MF"Object_Directory\UART2TCPBridge.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\i2c_master.o" : "i2c_master.c" "i2c_master.h" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "i2c_master.c" -o"Object_Directory\i2c_master.o" -MMD -MF"Object_Directory\i2c_master.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\Main.o" : "Main.c" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "declearation.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h" "i2c_master.h" "File_System\fatfs\include\fatfs\diskio.h" "FATFs_Config.h" "TCPIP_Stack\Include\TCPIP Stack\Tick.h" "VariableDef.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "Main.c" -o"Object_Directory\Main.o" -MMD -MF"Object_Directory\Main.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\Function.o" : "Function.c" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "HardwareProfile.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h" "i2c_master.h" "File_System\fatfs\include\fatfs\diskio.h" "FATFs_Config.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "Function.c" -o"Object_Directory\Function.o" -MMD -MF"Object_Directory\Function.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\Aliotgateway.o" : "Aliotgateway.c" "TCPIP_Stack\Include\Compiler.h" "Aliotgateway.h" "hmac.h" "defines.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "Aliotgateway.c" -o"Object_Directory\Aliotgateway.o" -MMD -MF"Object_Directory\Aliotgateway.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\hmac.o" : "hmac.c" "hmac.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "hmac.c" -o"Object_Directory\hmac.o" -MMD -MF"Object_Directory\hmac.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"Object_Directory\GenericTCPClient.o" : "GenericTCPClient.c" "TCPIP_Stack\Include\TCPIP Stack\TCPIP.h" "TCPIP_Stack\Include\GenericTypeDefs.h" "TCPIP_Stack\Include\Compiler.h" "HardwareProfile.h" "defines.h" "HardwareProfile.h" "VariableDef.h" "File_System\fatfs\include\fatfs\ff.h" "Fatfs_Config.h" "Aliotgateway.h"
+	$(CC) -mprocessor=32MX460F512L -x c -c "GenericTCPClient.c" -o"Object_Directory\GenericTCPClient.o" -MMD -MF"Object_Directory\GenericTCPClient.d" -I"." -I"TCPIP_Stack\Include" -I"File_System\fatfs\include\fatfs" -I"." -g -DPIC32_USB_DM320003_1_ENC28J60
+
+"clean" : 
+	$(RM) "Object_Directory\ff.o" "Object_Directory\diskio.o" "Object_Directory\fatfs_mmc_spi.o" "Object_Directory\Delay.o" "Object_Directory\Tick.o" "Object_Directory\UART2TCPBridge.o" "Object_Directory\i2c_master.o" "Object_Directory\Main.o" "Object_Directory\Function.o" "Object_Directory\Aliotgateway.o" "Object_Directory\hmac.o" "Object_Directory\GenericTCPClient.o" "Data_Acquisition_Syatem.elf" "Data_Acquisition_Syatem.hex"
+
